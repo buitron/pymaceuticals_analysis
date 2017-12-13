@@ -33,79 +33,13 @@ clinical_mouse_df = clinical_df.merge(mouse_df, how='outer', on='Mouse ID')
 clinical_mouse_df.head()
 ```
 
-
-
-
-<div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Mouse ID</th>
-      <th>Timepoint</th>
-      <th>Tumor Volume (mm3)</th>
-      <th>Metastatic Sites</th>
-      <th>Drug</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>b128</td>
-      <td>0</td>
-      <td>45.000000</td>
-      <td>0</td>
-      <td>Capomulin</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>b128</td>
-      <td>5</td>
-      <td>45.651331</td>
-      <td>0</td>
-      <td>Capomulin</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>b128</td>
-      <td>10</td>
-      <td>43.270852</td>
-      <td>0</td>
-      <td>Capomulin</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>b128</td>
-      <td>15</td>
-      <td>43.784893</td>
-      <td>0</td>
-      <td>Capomulin</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>b128</td>
-      <td>20</td>
-      <td>42.731552</td>
-      <td>0</td>
-      <td>Capomulin</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+| | Mouse ID | Timepoint | Tumor Volume (mm3) | Metastatic Sites | Drug |
+|---|-------|----|-----------|--------------------|------------------|------|
+| 0 | b128 | 0 | 45.000000 | 0 | Capomulin |
+| 1 | b128 | 5 | 45.651331 | 0 | Capomulin |
+| 2 | b128 | 10 | 43.270852 | 0 | Capomulin |
+| 3 | b128 | 15 | 43.784893 | 0 | Capomulin |
+| 4 | b128 | 20 | 42.731552 | 0 | Capomulin |
 
 
 ## Tumor Response to Treatment
