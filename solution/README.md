@@ -51,7 +51,15 @@ tumor_response_gp_mn = clinical_mouse_df.groupby(by=['Drug',
 tumor_response_gp_mn.head()
 ```
 
-
+| | | Tumor Volume (mm3) |
+|-|-|--------------------|
+| Drug | Timepoint | |
+|------|-----------|-|
+| Capomulin | 0 | 45.000000 |
+| | 5 | 44.266086 |
+| | 10 | 43.084291 |
+| | 15 | 42.064317 |
+| | 20 | 40.716325 |
 
 
 <div>
