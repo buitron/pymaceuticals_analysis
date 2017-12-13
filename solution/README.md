@@ -77,128 +77,20 @@ tumor_response_pv_mn.head()
 | 20 | 40.716325 | 52.157049 | 53.197691 | 54.920935 | 53.644087 | 54.364417 | 53.346737 | 40.238325 | 54.067395 | 53.170334 |
 
 
-<div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Drug</th>
-      <th>Capomulin</th>
-      <th>Ceftamin</th>
-      <th>Infubinol</th>
-      <th>Ketapril</th>
-      <th>Naftisol</th>
-      <th>Placebo</th>
-      <th>Propriva</th>
-      <th>Ramicane</th>
-      <th>Stelasyn</th>
-      <th>Zoniferol</th>
-    </tr>
-    <tr>
-      <th>Timepoint</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>45.000000</td>
-      <td>45.000000</td>
-      <td>45.000000</td>
-      <td>45.000000</td>
-      <td>45.000000</td>
-      <td>45.000000</td>
-      <td>45.000000</td>
-      <td>45.000000</td>
-      <td>45.000000</td>
-      <td>45.000000</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>44.266086</td>
-      <td>46.503051</td>
-      <td>47.062001</td>
-      <td>47.389175</td>
-      <td>46.796098</td>
-      <td>47.125589</td>
-      <td>47.248967</td>
-      <td>43.944859</td>
-      <td>47.527452</td>
-      <td>46.851818</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>43.084291</td>
-      <td>48.285125</td>
-      <td>49.403909</td>
-      <td>49.582269</td>
-      <td>48.694210</td>
-      <td>49.423329</td>
-      <td>49.101541</td>
-      <td>42.531957</td>
-      <td>49.463844</td>
-      <td>48.689881</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>42.064317</td>
-      <td>50.094055</td>
-      <td>51.296397</td>
-      <td>52.399974</td>
-      <td>50.933018</td>
-      <td>51.359742</td>
-      <td>51.067318</td>
-      <td>41.495061</td>
-      <td>51.529409</td>
-      <td>50.779059</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>40.716325</td>
-      <td>52.157049</td>
-      <td>53.197691</td>
-      <td>54.920935</td>
-      <td>53.644087</td>
-      <td>54.364417</td>
-      <td>53.346737</td>
-      <td>40.238325</td>
-      <td>54.067395</td>
-      <td>53.170334</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-
 ```python
 tumor_response_gp_se = clinical_mouse_df.groupby(by=['Drug',
                                             'Timepoint']).sem()[['Tumor Volume (mm3)']]
 tumor_response_gp_se.head()
 ```
 
+| | | Tumor Volume (mm3) |
+|-|-|--------------------|
+| Drug | Timepoint |
+| Capomulin | 0 | 0.000000 |
+| | 5 | 0.448593 |
+| | 10 | 0.702684 |
+| | 15 | 0.838617 |
+| | 20 | 0.909731 |
 
 
 
