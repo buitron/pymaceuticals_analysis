@@ -52,7 +52,6 @@ tumor_response_gp_mn.head()
 ```
 
 | | | Tumor Volume (mm3) |
-|-|-|--------------------|
 | Drug | Timepoint | |
 |------|-----------|-|
 | Capomulin | 0 | 45.000000 |
