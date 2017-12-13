@@ -1151,3 +1151,67 @@ plt.show()
 
 
 ## Summary Bar Graph
+
+
+```python
+tumor_change_over_treatment = ((tumor_response_pv_mn.iloc[-1] - tumor_response_pv_mn.iloc[0])
+                               /tumor_response_pv_mn.iloc[0])*100
+tumor_change_over_treatment
+```
+
+
+
+
+    Drug
+    Capomulin   -19.475303
+    Ceftamin     42.516492
+    Infubinol    46.123472
+    Ketapril     57.028795
+    Naftisol     53.923347
+    Placebo      51.297960
+    Propriva     47.241175
+    Ramicane    -22.320900
+    Stelasyn     52.085134
+    Zoniferol    46.579751
+    dtype: float64
+
+
+
+
+```python
+x_axis = np.arange(0,len(tumor_response_pv_mn),1)
+y_axis = np.array(list(tumor_change_over_treatment))
+
+mask_good = y_axis < 0
+mask_bad = y_axis >= 0
+
+labels = list(tumor_response_pv_mn.columns)
+```
+
+
+```python
+fig, ax = plt.subplots(figsize=(15,10))
+
+ax.bar(x_axis[mask_good], y_axis[mask_good], width=1, edgecolor=['black']*len(x_axis[mask_good]), color='green', zorder=3)
+ax.bar(x_axis[mask_bad], y_axis[mask_bad], width=1, edgecolor=['black']*len(x_axis[mask_bad]), color='red', zorder=3)
+ax.set_xticks(list(x_axis))
+ax.set_xticklabels(labels=labels)
+
+
+ax.set_title('Tumor Change Over 45 Day Treatment', fontdict={'fontsize':18})
+ax.set_ylabel('% Tumor Volume Change', fontdict={'fontsize':14})
+
+for bar in ax.patches:
+    ax.text(bar.get_x()+.12, bar.get_height()*.92, "{:.2f}%".format(bar.get_height()),
+            color='white', fontdict={'size':16, 'weight':'heavy'})
+    
+ax.set_ylim(-25,60)
+ax.set_xlim(-.5,9.5)
+ax.grid(ls='dashed', zorder=0)
+
+plt.show()
+```
+
+
+![png](../images/output_27_0.png)
+
