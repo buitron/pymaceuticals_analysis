@@ -61,69 +61,20 @@ tumor_response_gp_mn.head()
 | | 20 | 40.716325 |
 
 
-<div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th></th>
-      <th>Tumor Volume (mm3)</th>
-    </tr>
-    <tr>
-      <th>Drug</th>
-      <th>Timepoint</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th rowspan="5" valign="top">Capomulin</th>
-      <th>0</th>
-      <td>45.000000</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>44.266086</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>43.084291</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>42.064317</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>40.716325</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-
 ```python
 tumor_response_pv_mn = pd.pivot_table(clinical_mouse_df,values='Tumor Volume (mm3)',
                                 index=['Timepoint'], columns=['Drug'], aggfunc=np.mean)
 tumor_response_pv_mn.head()
 ```
 
-
+| Drug | Capomulin | Ceftamin | Infubinol | Ketapril | Naftisol | Placebo | Propriva | Ramicane | Stelasyn | Zoniferol |
+|------|-----------|----------|-----------|----------|----------|---------|----------|----------|----------|-----------|
+| Timepoint | | | | | | | | | | |
+| 0 | 45.000000 | 45.000000 | 45.000000 | 45.000000 | 45.000000 | 45.000000 | 45.000000 | 45.000000 | 45.000000 | 45.000000 |
+| 5 | 44.266086 | 46.503051 | 47.062001 | 47.389175 | 46.796098 | 47.125589 | 47.248967 | 43.944859 | 47.527452 | 46.851818 |
+| 10 | 43.084291 | 48.285125 | 49.403909 | 49.582269 | 48.694210 | 49.423329 | 49.101541 | 42.531957 | 49.463844 | 48.689881 |
+| 15 | 42.064317 | 50.094055 | 51.296397 | 52.399974 | 50.933018 | 51.359742 | 51.067318 | 41.495061 | 51.529409 | 50.779059 |
+| 20 | 40.716325 | 52.157049 | 53.197691 | 54.920935 | 53.644087 | 54.364417 | 53.346737 | 40.238325 | 54.067395 | 53.170334 |
 
 
 <div>
