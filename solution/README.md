@@ -99,7 +99,6 @@ tumor_response_pv_se = pd.pivot_table(clinical_mouse_df,values='Tumor Volume (mm
 tumor_response_pv_se.head()
 ```
 
-
 | Drug | Capomulin | Ceftamin | Infubinol | Ketapril | Naftisol | Placebo | Propriva | Ramicane | Stelasyn | Zoniferol |
 |------|-----------|----------|-----------|----------|----------|---------|----------|----------|----------|-----------|
 | Timepoint | | | | | | | | | | |
@@ -108,122 +107,6 @@ tumor_response_pv_se.head()
 | 10 | 0.702684 | 0.236144 | 0.282346 | 0.357421 | 0.319415 | 0.402064 | 0.376195 | 0.720225 | 0.433678 | 0.263949 |
 | 15 | 0.838617 | 0.332053 | 0.357705 | 0.580268 | 0.444378 | 0.614461 | 0.466109 | 0.770432 | 0.493261 | 0.370544 |
 | 20 | 0.909731 | 0.359482 | 0.476210 | 0.726484 | 0.595260 | 0.839609 | 0.555181 | 0.786199 | 0.621889 | 0.533182 |
-
-
-<div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Drug</th>
-      <th>Capomulin</th>
-      <th>Ceftamin</th>
-      <th>Infubinol</th>
-      <th>Ketapril</th>
-      <th>Naftisol</th>
-      <th>Placebo</th>
-      <th>Propriva</th>
-      <th>Ramicane</th>
-      <th>Stelasyn</th>
-      <th>Zoniferol</th>
-    </tr>
-    <tr>
-      <th>Timepoint</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>0.448593</td>
-      <td>0.164505</td>
-      <td>0.235102</td>
-      <td>0.264819</td>
-      <td>0.202385</td>
-      <td>0.218091</td>
-      <td>0.231708</td>
-      <td>0.482955</td>
-      <td>0.239862</td>
-      <td>0.188950</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>0.702684</td>
-      <td>0.236144</td>
-      <td>0.282346</td>
-      <td>0.357421</td>
-      <td>0.319415</td>
-      <td>0.402064</td>
-      <td>0.376195</td>
-      <td>0.720225</td>
-      <td>0.433678</td>
-      <td>0.263949</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>0.838617</td>
-      <td>0.332053</td>
-      <td>0.357705</td>
-      <td>0.580268</td>
-      <td>0.444378</td>
-      <td>0.614461</td>
-      <td>0.466109</td>
-      <td>0.770432</td>
-      <td>0.493261</td>
-      <td>0.370544</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>0.909731</td>
-      <td>0.359482</td>
-      <td>0.476210</td>
-      <td>0.726484</td>
-      <td>0.595260</td>
-      <td>0.839609</td>
-      <td>0.555181</td>
-      <td>0.786199</td>
-      <td>0.621889</td>
-      <td>0.533182</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
 
 
 ```python
@@ -266,19 +149,7 @@ metastatic_response_gp_mn.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
 
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
