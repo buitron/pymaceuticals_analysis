@@ -93,63 +93,6 @@ tumor_response_gp_se.head()
 | | 20 | 0.909731 |
 
 
-
-<div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th></th>
-      <th>Tumor Volume (mm3)</th>
-    </tr>
-    <tr>
-      <th>Drug</th>
-      <th>Timepoint</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th rowspan="5" valign="top">Capomulin</th>
-      <th>0</th>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>0.448593</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>0.702684</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>0.838617</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>0.909731</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-
 ```python
 tumor_response_pv_se = pd.pivot_table(clinical_mouse_df,values='Tumor Volume (mm3)',
                                 index=['Timepoint'], columns=['Drug'], aggfunc=sem)
@@ -157,6 +100,14 @@ tumor_response_pv_se.head()
 ```
 
 
+| Drug | Capomulin | Ceftamin | Infubinol | Ketapril | Naftisol | Placebo Propriva | Ramicane | Stelasyn | Zoniferol |
+|------|-----------|----------|-----------|----------|----------|------------------|----------|----------|-----------|
+| Timepoint | | | | | | | | | | |
+| 0 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.000000 |
+| 5 | 0.448593 | 0.164505 | 0.235102 | 0.264819 | 0.202385 | 0.218091 | 0.231708 | 0.482955 | 0.239862 | 0.188950 |
+| 10 | 0.702684 | 0.236144 | 0.282346 | 0.357421 | 0.319415 | 0.402064 | 0.376195 | 0.720225 | 0.433678 | 0.263949 |
+| 15 | 0.838617 | 0.332053 | 0.357705 | 0.580268 | 0.444378 | 0.614461 | 0.466109 | 0.770432 | 0.493261 | 0.370544 |
+| 20 | 0.909731 | 0.359482 | 0.476210 | 0.726484 | 0.595260 | 0.839609 | 0.555181 | 0.786199 | 0.621889 | 0.533182 |
 
 
 <div>
