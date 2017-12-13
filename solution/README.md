@@ -1,9 +1,9 @@
 
 # Pymaceuticals Inc
 ## Analysis
-* Observed trend 1
-* Observed trend 2
-* Observed trend 3
+* There are two drugs that seem to work significantly better than the rest in controlling the spread and growth of the treated tumor. Those drugs are: Capomulin, and Ramicane.
+* All of the drugs seem to control the metastastize property of the treated tumor compared to the placebo.
+* There is hardly any variation in each drugs performance since the begining of it's utilization on the subject. The path of outcome is very linear throughout the entire experiment, i.e from day 1 to day 45 the drug Zoniferol has had an average rate of change of about positive 1.16 tumor volume (mm3) growth per 5 days.
 
 
 ```python
@@ -515,7 +515,7 @@ plt.show()
 ```
 
 
-![png](../images/output_11_0.png)
+![drug tumor response scatterplot](../images/output_11_0.png)
 
 
 ## Metastatic Response to Treatment
@@ -925,7 +925,7 @@ plt.show()
 ```
 
 
-![png](../images/output_18_0.png)
+![metastatic spread to treatment scatterplot](../images/output_18_0.png)
 
 
 ## Survival Rates
@@ -1147,7 +1147,7 @@ plt.show()
 ```
 
 
-![png](../images/output_23_0.png)
+![survival rate to drug scatterplot](../images/output_23_0.png)
 
 
 ## Summary Bar Graph
@@ -1204,7 +1204,7 @@ ax.set_ylabel('% Tumor Volume Change', fontdict={'fontsize':14})
 for bar in ax.patches:
     ax.text(bar.get_x()+.12, bar.get_height()*.92, "{:.2f}%".format(bar.get_height()),
             color='white', fontdict={'size':16, 'weight':'heavy'})
-    
+
 ax.set_ylim(-25,60)
 ax.set_xlim(-.5,9.5)
 ax.grid(ls='dashed', zorder=0)
@@ -1213,5 +1213,5 @@ plt.show()
 ```
 
 
-![png](../images/output_27_0.png)
+![tumor change with drug bargraph](../images/output_27_0.png)
 
